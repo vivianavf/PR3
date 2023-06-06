@@ -313,7 +313,7 @@
 
 	function makeTimer() {
 
-		var endTime = new Date("21 December 2019 9:56:00 GMT+01:00");			
+		var endTime = new Date("23 June 2023 10:56:00 GMT-05:00");			
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
@@ -330,10 +330,10 @@
 		if (minutes < "10") { minutes = "0" + minutes; }
 		if (seconds < "10") { seconds = "0" + seconds; }
 
-		$("#days").html(days + "<span>Days</span>");
-		$("#hours").html(hours + "<span>Hours</span>");
-		$("#minutes").html(minutes + "<span>Minutes</span>");
-		$("#seconds").html(seconds + "<span>Seconds</span>");		
+		$("#days").html(days + "<span>Dias</span>");
+		$("#hours").html(hours + "<span>Horas</span>");
+		$("#minutes").html(minutes + "<span>Minutos</span>");
+		$("#seconds").html(seconds + "<span>Segundos</span>");		
 
 }
 
