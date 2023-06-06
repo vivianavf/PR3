@@ -1,0 +1,25 @@
+#quality-of-life.bar {
+    height: 400px;
+    margin: 0 auto;
+  }
+
+div#totalRevenueChart{
+    padding-bottom: 0.5rem;
+}
+  
+
+.charts-css.bar.show-labels{
+    --labels-size: 175px;
+}
+
+h5#life-quality-title{
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+div#div-fondo{
+    background-color: #eaeaea;
+}
