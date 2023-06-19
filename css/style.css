@@ -8225,7 +8225,8 @@ h1, h2, h3, h4, h5,
     letter-spacing: 2px;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #000000; }
+      font-size: 15px;      
+      color: white; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 0;
@@ -8632,7 +8633,7 @@ h1, h2, h3, h4, h5,
           position: relative; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
           font-size: 44px;
-          color: #000000;
+          color: #fff;
           line-height: 1.3;
           font-weight: 300;
           text-transform: uppercase; }
@@ -8646,7 +8647,7 @@ h1, h2, h3, h4, h5,
             .owl-carousel.home-slider .slider-item .slider-text h1 {
               font-size: 40px; } }
         .owl-carousel.home-slider .slider-item .slider-text p {
-          color: rgba(0, 0, 0, 0.8);
+          color: #fff;
           font-weight: 400; }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text p {
@@ -9677,9 +9678,8 @@ textarea.form-control {
 .ftco-footer {
   font-size: 14px;
   padding: 7em 0;
-  color: rgba(255, 255, 255, 0.8);
-  background: #4e4e4e;
-  background: #000000; }
+  color: rgba(255, 255, 255, 0.8);  
+  background: #600; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }
@@ -9813,7 +9813,7 @@ textarea.form-control {
     transition: all 0.3s ease; }
     .ftco-services .services .icon span {
       font-size: 70px;
-      color: #000000; }
+      color: blue; }
   .ftco-services .services .media-body {
     width: 100%; }
     .ftco-services .services .media-body h3 {
@@ -9927,7 +9927,7 @@ textarea.form-control {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgba(0, 0, 0, 0.2); }
+    color: rgba(0, 0, 0, 1); }
   .testimony-wrap .line {
     position: relative;
     border-left: 1px solid #e6e6e6; }
@@ -10007,11 +10007,11 @@ textarea.form-control {
     .services-2 .text p {
       padding-bottom: 0; }
   .services-2:nth-child(1) {
-    background: rgba(0, 0, 0, 0.03); }
+    background: rgba(0, 0, 0, 0.04); }
   .services-2:nth-child(2) {
     background: rgba(0, 0, 0, 0.1); }
   .services-2:nth-child(3) {
-    background: #0B00CF; }
+    background: rgba(0, 0, 0, 0.3); }
     .services-2:nth-child(3) .icon:after {
       border-color: #fff !important; }
     .services-2:nth-child(3) .icon:before {
@@ -10030,6 +10030,10 @@ textarea.form-control {
       color: rgba(255, 255, 255, 0.8); }
       .services-2:nth-child(4) .text h3 {
         color: #fff; }
+
+.services-2:hover{
+  background-color: #C10A28;
+}
 
 .image-popup {
   cursor: -webkit-zoom-in;
@@ -10679,3 +10683,80 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+#gadgets:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#iconscontainer{
+  margin-bottom: 5%;
+}
+
+#input-wrapper{
+  display: flex;
+  flex-direction: column;  
+  padding-right: 30%;
+}
+
+#boton-go{
+  background-color: #000000;
+  color: #fff;
+  margin-top: 1%;
+  border: none;
+  border-radius: 0;
+}
+
+#lista-pagos{
+  text-decoration: none;
+  list-style: none;
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.payment-types{
+  align-items: center;
+  text-align: center;
+}
+
+.scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#scroll-text {
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}

@@ -28,10 +28,13 @@
   </head>
   <body class="goto-here">
 		<div class="py-1 bg-black">
-    	<div class="container">
+    	<div class="container scroll-container" >
     		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
 	    		<div class="col-lg-12 d-block">
-		    		<div class="row d-flex">
+		    		<div class="row d-flex" id="scroll-text">	
+						<div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+						    <span class="text">Esta página no es una traducción.</span>
+					    </div>											
 		    			<div class="col-md pr-4 d-flex topper align-items-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
 						    <span class="text">+ 593 958 368 760</span>
@@ -40,14 +43,13 @@
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
 						    <span class="text">vivianavera03@gmail.com</span>
 					    </div>
-					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
-						    <span class="text">Entregas de 3-5 días laborales&amp; Devoluciones Gratis***</span>
-					    </div>
+					    
 				    </div>
 			    </div>
 		    </div>
 		  </div>
-    </div>
+    	</div>
+
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Wear it.</a>
@@ -57,8 +59,9 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
-	          <li class="nav-item dropdown">
+	          <li class="nav-item active"><a href="index.html" class="nav-link menu-inicial">Inicio</a></li>
+			  <li class="nav-item"><a href="#" class="nav-link menu-inicial">Categorías</a></li>
+	          <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalogo</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
               	<a class="dropdown-item" href="#">Smartwatches</a>
@@ -66,11 +69,10 @@
                 <a class="dropdown-item" href="#">Smart Clothes</a>
                 <a class="dropdown-item" href="#">Virtual Reality</a>
               </div>
-            </li>
-	          <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-	          <li class="nav-item cta cta-colored"><a href="#" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+            </li> -->
+	          <li class="nav-item"><a href="#" class="nav-link menu-inicial">Sobre Nosotros</a></li>
+	          <li class="nav-item"><a href="#" class="nav-link menu-inicial">Contáctanos</a></li>
+	          <li class="nav-item cta cta-colored"><a href="#" class="nav-link menu-inicial"><span class="icon-shopping_cart"></span>[0]</a></li>
 
 	        </ul>
 	      </div>
@@ -87,12 +89,12 @@
 	          	<img class="one-third order-md-last img-fluid" src="images/bg_1.png" alt="">
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">#New Arrival</span>
+		          		<span class="subheading">#Wearables #WearIt #Arrivals</span>
 		          		<div class="horizontal">
-				            <h1 class="mb-4 mt-3">New Smartwatches</h1>
-				            <p class="mb-4">Discover new funcionalities.</p>
+				            <h1 class="mb-4 mt-3">Nuevos Smartwatches</h1>
+				            <p class="mb-4">Conectando su mente, cuerpo y espíritu a través de la tecnología portátil.</p>
 				            
-				            <p><a href="#" class="btn-custom">Descúbrelo</a></p>
+				            <p><a href="#" class="btn-custom">Comprar Ahora</a></p>
 				          </div>
 		            </div>
 		          </div>
@@ -107,12 +109,12 @@
 	          	<img class="one-third order-md-last img-fluid" src="images/bg_2.png" alt="">
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">#New Arrival</span>
+		          		<span class="subheading">#Wearables #WearIt #Arrivals</span>
 		          		<div class="horizontal">
-				            <h1 class="mb-4 mt-3">Wearables 2023</h1>
-				            <p class="mb-4">Everything for your daily activities.</p>
+				            <h1 class="mb-4 mt-3">Tendencia en tecnología 2023.</h1>
+				            <p class="mb-4">Todo para tus actividades diarias. Pulseras de fitness, relojes inteligentes y mucho más.</p>
 				            
-				            <p><a href="#" class="btn-custom">Descúbrelo</a></p>
+				            <p><a href="#" class="btn-custom">Comprar Ahora</a></p>
 				          </div>
 		            </div>
 		          </div>
@@ -122,52 +124,13 @@
 	    </div>
     </section>
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
-			<div class="container">
-				<div class="row no-gutters ftco-services">
-          <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services p-4 py-md-5">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-bag"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Envios Gratis</h3>
-                <p>Envíos gratis hasta la comodidad de tu casa.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services p-4 py-md-5">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-customer-service"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Atención al Cliente</h3>
-                <p>Estamos disponibles para ti las 24 horas.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services p-4 py-md-5">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-payment-security"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Pagos Seguros</h3>
-                <p>Tus datos están seguros con nosotros.</p>
-              </div>
-            </div>      
-          </div>
-        </div>
-			</div>
-		</section>
 
     <section class="ftco-section bg-light">
     	<div class="container">
 				<div class="row justify-content-center mb-3 pb-3">
           <div class="col-md-12 heading-section text-center ftco-animate">
-            <h2 class="mb-4">New Wearables Arrival</h2>
-            <p>Explora los nuevos wearables en 2023.</p>
+            <h2 class="mb-4">Nuevas Ofertas 2023</h2>
+            <p>Explora los nuevos wearables en 2023. <br>Si está buscando una manera de mejorar su salud, mantenerse conectado o divertirse, un dispositivo portátil puede ser una buena opción para usted.</p>
           </div>
         </div>   		
     	</div>
@@ -206,8 +169,7 @@
     			</div>
     			<div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
     				<div class="product d-flex flex-column">
-    					<a href="#" class="img-prod"><img class="img-fluid img-shop" src="images/product-2.png" alt="Colorlib Template">
-    						<span class="status">50% Descuento</span>
+    					<a href="#" class="img-prod"><img class="img-fluid img-shop" src="images/product-2.png" alt="Colorlib Template">    						
     						<div class="overlay"></div>
     					</a>
     					<div class="text py-3 pb-4 px-3">
@@ -227,7 +189,7 @@
 	    					</div>
     						<h3><a href="#">VR Park</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span class="mr-2 price-dc">$1500.00</span><span class="price-sale">$750.00</span></p>
+	    						<p class="price"><span>$750.00</span></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Añadir<i class="ion-ios-add ml-1"></i></span></a>
@@ -239,6 +201,7 @@
     			<div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
     				<div class="product">
     					<a href="#" class="img-prod"><img class="img-fluid img-shop" src="images/product-3.png" alt="Colorlib Template">
+							<span class="status">10% Descuento</span>
 	    					<div class="overlay"></div>
 	    				</a>
     					<div class="text py-3 pb-4 px-3">
@@ -258,7 +221,7 @@
 	    					</div>
     						<h3><a href="#">Huawei Watch Buds</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span>$120.00</span></p>
+	    						<p class="price"><span class="mr-2 price-dc">$2500.00</span><span class="price-sale">$1750.00</span></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Añadir<i class="ion-ios-add ml-1"></i></span></a>
@@ -303,6 +266,7 @@
     				<div class="product d-flex flex-column">
     					<a href="#" class="img-prod"><img class="img-fluid img-shop" src="images/product-5.png" alt="Colorlib Template">
     						<div class="overlay"></div>
+							<span class="status">8% Descuento</span>
     					</a>
     					<div class="text py-3 pb-4 px-3">
     						<div class="d-flex">
@@ -321,7 +285,7 @@
 	    					</div>
     						<h3><a href="#">TCL RayNeo X2</a></h3>
     						<div class="pricing">
-	    						<p class="price"><span>$1320.00</span></p>
+	    						<p class="price"><span class="mr-2 price-dc">$2500.00</span><span class="price-sale">$1750.00</span></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Añadir<i class="ion-ios-add ml-1"></i></span></a>
@@ -333,7 +297,7 @@
     			<div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
     				<div class="product d-flex flex-column">
     					<a href="#" class="img-prod"><img class="img-fluid img-shop" src="images/product-6.png" alt="Colorlib Template">
-    						<span class="status">50% Descuento</span>
+    						
     						<div class="overlay"></div>
     					</a>
     					<div class="text py-3 pb-4 px-3">
@@ -353,7 +317,7 @@
 	    					</div>
     						<h3><a href="#">Just Dance Bundle</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span class="mr-2 price-dc">$2500.00</span><span class="price-sale">$1750.00</span></p>
+	    						<p class="price"><span>$1500.00</span></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Añadir<i class="ion-ios-add ml-1"></i></span></a>
@@ -428,6 +392,45 @@
     	</div>
     </section>
 
+    <section class="ftco-section ftco-no-pt ftco-no-pb" id="iconscontainer">
+		<div class="container" id="gadgets">
+			<div class="row no-gutters ftco-services">
+	  <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services p-4 py-md-5">
+		  <div class="icon d-flex justify-content-center align-items-center mb-4">
+				<span class="flaticon-bag"></span>
+		  </div>
+		  <div class="media-body">
+			<h3 class="heading">Envios Gratis</h3>
+			<p>Envíos gratis hasta la comodidad de tu casa.</p>
+		  </div>
+		</div>      
+	  </div>
+	  <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services p-4 py-md-5">
+		  <div class="icon d-flex justify-content-center align-items-center mb-4">
+				<span class="flaticon-customer-service"></span>
+		  </div>
+		  <div class="media-body">
+			<h3 class="heading">Atención al Cliente</h3>
+			<p>Estamos disponibles para ti las 24 horas.</p>
+		  </div>
+		</div>    
+	  </div>
+	  <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services p-4 py-md-5">
+		  <div class="icon d-flex justify-content-center align-items-center mb-4">
+				<span class="flaticon-payment-security"></span>
+		  </div>
+		  <div class="media-body">
+			<h3 class="heading">Pagos Seguros</h3>
+			<p>Tus datos están seguros con nosotros.</p>
+		  </div>
+		</div>      
+	  </div>
+	</div>
+		</div>
+	</section>
 
 
     <section class="ftco-section ftco-choose ftco-no-pb ftco-no-pt">
@@ -463,19 +466,19 @@
     							<div class="col-md-6">
 		    						<div class="choose-wrap wrap img align-self-stretch bg-light d-flex align-items-center">
 		    							<div class="text text-center px-5">
-		    								<span class="subheading">Summer Sale</span>
-				    						<h2>Extra 50% Descuento</h2>
-				    						<p>Aprovecha las ofertas por el verano.</p>
-				    						<p><a href="#" class="btn btn-black px-3 py-2">Comprar Ahora</a></p>
+		    								<span class="subheading"></span>
+				    						<h2>Política de devolución de 30 días</h2>
+				    						<p>Aplican Restricciones</p>
+				    						<p><a href="#" class="btn btn-black px-3 py-2">Leer Más</a></p>
 				    					</div>
 		    						</div>
 	    						</div>
 	    						<div class="col-md-6">
 		    						<div class="choose-wrap wrap img align-self-stretch d-flex align-items-center" style="background-image: url(images/choose-3.jpg);">
 		    							<div class="text text-center text-white px-5">
-		    								<span class="subheading">Wearables</span>
-				    						<h2>Health Trackers</h2>
-				    						<p>Cuida tu salud constantemente.</p>
+		    								<span class="subheading texto-dif">Wearables</span>
+				    						<h2 class="texto-dif">Health Trackers</h2>
+				    						<p class="texto-dif">Cuida tu salud constantemente.</p>
 				    						<p><a href="#" class="btn btn-black px-3 py-2">Comprar ahora</a></p>
 				    					</div>
 		    						</div>
@@ -508,6 +511,7 @@
 						<div class="text-deal">
 							<h2><a href="#">Health Bundle</a></h2>
 							<p class="price"><span class="mr-2 price-dc">$3450.00</span><span class="price-sale">$1500.00</span></p>
+							<p>Waist Fitness Tracker + I-SOL Plantillas + Gastric Alimetry</p>
 							<ul class="thumb-deal d-flex mt-4">
 								<li class="img" style="background-image: url(images/product-4.png);"></li>
 								<li class="img" style="background-image: url(images/product-7.png);"></li>
@@ -563,8 +567,8 @@
         	</div>
           <div class="col-lg-7">
           	<div class="heading-section ftco-animate mb-5">
-	            <h2 class="mb-4">Clientes contentos</h2>
-	            <p>Revisa los testimonios de otros clientes</p>
+	            <h2 class="mb-4">Reseñas</h2>
+	            <p>Revisa los testimonios de otros clientes.<br>La sección de reseñas de una tienda en línea es una excelente manera para que los clientes compartan sus pensamientos y experiencias.</p>
 	          </div>
             <div class="carousel-testimony owl-carousel">
               <div class="item">
@@ -576,8 +580,8 @@
                   </div>
                   <div class="text">
                     <p class="mb-4 pl-4 line">Realmente es la pagina mas confiable de Guayaquil.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Marketing Manager</span>
+                    <p class="name">Mónica Aguirre</p>
+                    <span class="position">Manager de Marketing</span>
                   </div>
                 </div>
               </div>
@@ -591,7 +595,7 @@
                   <div class="text">
                     <p class="mb-4 pl-4 line">Gracias a estos dispositivos mi salud ha mejorado.</p>
                     <p class="name">Daniel Bazurto</p>
-                    <span class="position">Interface Designer</span>
+                    <span class="position">Diseñador de Interfaces</span>
                   </div>
                 </div>
               </div>
@@ -605,13 +609,13 @@
                   <div class="text">
                     <p class="mb-4 pl-4 line">Con estos productos llevo el control de mis niveles de azucar.</p>
                     <p class="name">Juan Navarrete</p>
-                    <span class="position">UI Designer</span>
+                    <span class="position">Diseñador UI</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-4" style="background-image: url(images/person_4.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -619,21 +623,21 @@
                   <div class="text">
                     <p class="mb-4 pl-4 line">Lo maximo para mis rutinas de entrenamiento 10/10</p>
                     <p class="name">Francisco Espinoza</p>
-                    <span class="position">Web Developer</span>
+                    <span class="position">Desarrollador Web</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-4" style="background-image: url(images/person_5.jpeg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
                     <p class="mb-4 pl-4 line">Ya no pierdo el tiempo yendo a comprar en la tienda fisica, el delivery es muy rapido</p>
-                    <p class="name">Gary Veliz</p>
-                    <span class="position">System Analyst</span>
+                    <p class="name">María Veliz</p>
+                    <span class="position">Analista de Sistemas</span>
                   </div>
                 </div>
               </div>
@@ -642,6 +646,52 @@
         </div>
       </div>
     </section>
+
+	<section><div class="payment-types">
+        
+        
+		<h2>Pagos Aceptados</h2>
+		<ul id="lista-pagos">
+		  
+			<li>
+			  <img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/american_express-2264c9b8b57b23b0b0831827e90cd7bcda2836adc42a912ebedf545dead35b20.svg">
+			</li>
+		  
+			<li>
+			  <img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/diners_club-16436b9fb6dd9060edb51f1c7c44e23941e544ad798282d6aef1604319562fba.svg">
+			</li>
+		  
+			<li>
+			  <img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/discover-cc9808e50193c7496e7a5245eb86d5e06f02e2476c0fe70f2c40016707d35461.svg">
+			</li>
+		  
+			<li>
+			  <img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/metapay-68da02f01a5d726d4b20e8248946d820b4573bf2f8bb06e6afc6d3eb04fac04d.svg">
+			</li>
+		  
+			<li>
+			  <img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg">
+			</li>
+		  
+			<li>
+			  <img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg">
+			</li>
+		  
+			<li>
+			  <img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/shopify_pay-100fde795157a3d1c18042346cf8dbd1fcf4c4f53c20064e13ea2799eb726655.svg">
+			</li>
+		  
+			<li>
+			  <img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/venmo-e46496b4036966108664ea6a65bfeddd373275087df5f94cc3e5564fdb493eb0.svg">
+			</li>
+		  
+			<li>
+			  <img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg">
+			</li>
+		  
+		</ul>
+	  
+	</div></section>
 
     <section class="ftco-gallery">
     	<div class="container">
@@ -712,8 +762,12 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Wearables Shop</h2>
-              <p>Lo mejor para tu vida.</p>
+              <h2 class="ftco-heading-2">Suscríbete al NewsLetter</h2>
+			  <div id="input-wrapper">
+				<input type="email" value="" placeholder="Correo Electrónico" name="EMAIL" id="mail" class="input-group-field" aria-label="email@example.com" autocorrect="off" autocapitalize="none">
+				<button id="boton-go" type="submit" id="subscribe" class="btn">Suscribirse</button>
+			  </div>
+              <p>¡Suscríbase para ser el primero en enterarse de nuestras ofertas exclusivas y las últimas novedades!</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -721,7 +775,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md">
+          <!-- <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Menu</h2>
               <ul class="list-unstyled">
@@ -731,7 +785,7 @@
                 <li><a href="#" class="py-2 d-block">Contacto</a></li>
               </ul>
             </div>
-          </div>
+          </div> -->
           <div class="col-md-4">
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Ayuda</h2>
@@ -766,7 +820,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados
 						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						</p>
           </div>
